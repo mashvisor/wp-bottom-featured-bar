@@ -2,10 +2,10 @@ div.bottom-featured-bar {
    position:fixed;
    left:0px;
    bottom:0px;
-   height:60px;
+   padding: 20px 0px;
    width:100%;
    color:white;
-   background:#999;
+   background:#414562;
 }
 /* IE 6 fix */
 * html div.bottom-featured-bar {
