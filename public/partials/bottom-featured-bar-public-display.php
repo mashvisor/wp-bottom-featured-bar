@@ -12,15 +12,8 @@
  */
 ?>
 <?php 
-global $post;
-// show only if the post type is a blog post
-if($post->post_type === "post"): 
-
-$args = array( 'posts_per_page' => 5, 'orderby' => 'rand' );
-$rand_posts = get_posts( $args );
-foreach ( $rand_posts as $_post ) : 
-  setup_postdata( $_post ); 
-?> 
+$_post = wp_bottom_featured_bar_post();
+if($_post != null):  ?> 
 
 <div class="bottom-featured-bar">
     <div class="container">
@@ -32,9 +25,4 @@ foreach ( $rand_posts as $_post ) :
     </div>
 </div> 
 
-<?php 
-break;
-    endforeach; 
-    wp_reset_postdata();  
-    endif;  
-?>
+<?php endif; ?>

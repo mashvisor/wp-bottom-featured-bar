@@ -80,7 +80,12 @@ class Bottom_Featured_Bar {
 		 * The class responsible for defining internationalization functionality
 		 * of the plugin.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-bottom-featured-bar-i18n.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-bottom-featured-bar-i18n.php'; 
+		/**
+		 * The set of functions that provide data to templates
+		 *  
+		 */
+		 require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-bottom-featured-bar-template-tags.php';
 		/**
 		 * The class responsible for defining all actions that occur in the public-facing
 		 * side of the site.
