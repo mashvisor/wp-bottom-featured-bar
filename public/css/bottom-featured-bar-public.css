@@ -41,7 +41,7 @@ div.bottom-featured-bar .suggested-post{
 }
 
 @media (max-width: 767px){
-.hidden-xs {
-    display: none !important;
-}
+  .hidden-xs-mv {
+      display: none !important;
+  }
 }
