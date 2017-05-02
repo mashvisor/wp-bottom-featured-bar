@@ -19,7 +19,6 @@ if($post->post_type === "post"):
 $args = array( 'posts_per_page' => 5, 'orderby' => 'rand' );
 $rand_posts = get_posts( $args );
 foreach ( $rand_posts as $_post ) : 
-var_export($_post);
   setup_postdata( $_post ); 
 ?> 
 
@@ -27,7 +26,7 @@ var_export($_post);
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                Read: <a href="<?php echo get_post_permalink($_post->ID); ?>"><?php echo $_post->post_title; ?></a>  <a class="btn btn-primary"> Ok <a>
+               <?php _e('Read Now','bottom-featured-bar') ?> : <a href="<?php echo get_post_permalink($_post->ID); ?>"><?php echo $_post->post_title; ?></a>  <a class="btn btn-primary"> Ok <a>
             </div>
         </div>
     </div>
