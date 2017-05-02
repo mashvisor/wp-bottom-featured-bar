@@ -12,3 +12,30 @@ div.bottom-featured-bar {
    position:absolute;
    top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
 }
+
+div.bottom-featured-bar .close-bfb{
+  padding: 0;
+  position: relative;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  color: #414562;
+  background: #ffffff;
+  border: 0px;
+  border-radius: 50%;
+  float: right;
+}
+
+div.bottom-featured-bar .close-bfb i{
+  color: #414562;
+  position: absolute;
+  top: 3px;
+  left: 5px;
+}
+div.bottom-featured-bar .read-now-title{
+  display: inline-block;
+  color: #b0b4cd;
+}
+div.bottom-featured-bar .suggested-post{
+  color: #ffffff;
+}
