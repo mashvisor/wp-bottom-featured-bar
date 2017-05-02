@@ -52,7 +52,8 @@ class Bottom_Featured_Bar_Public {
 	 * @since    1.0.0
 	 */
 	public function enqueue_styles() {
-		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/bottom-featured-bar-public.css', array(), $this->version, 'all' );
+		wp_enqueue_style( 'fontaweasome', '//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css');
+		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/bottom-featured-bar-public.css', array('fontaweasome'), $this->version, 'all' );
 	}
 	/**
 	 * Register the JavaScript for the public-facing side of the site.
