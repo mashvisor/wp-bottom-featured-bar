@@ -39,3 +39,9 @@ div.bottom-featured-bar .read-now-title{
 div.bottom-featured-bar .suggested-post{
   color: #ffffff;
 }
+
+@media (max-width: 767px){
+.hidden-xs {
+    display: none !important;
+}
+}

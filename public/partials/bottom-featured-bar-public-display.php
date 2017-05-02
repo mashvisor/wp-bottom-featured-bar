@@ -19,7 +19,7 @@ if($_post != null):  ?>
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-               <?php _e('<div class="read-now-title"><i class="fa fa-exclamation-circle" aria-hidden="true"></i> Read Now:</div>','bottom-featured-bar') ?> <a class="suggested-post" href="<?php echo get_post_permalink($_post->ID); ?>"><?php echo $_post->post_title; ?> <i class="fa fa-chevron-right" aria-hidden="true"></i></a>  <a class="btn btn-primary close-bfb" id="close-bfb" onclick="close_bottom_featured_bar()"> <i class="fa fa-times" aria-hidden="true"></i> <a>
+              <div class="read-now-title"><i class="fa fa-exclamation-circle" aria-hidden="true"></i> <?php _e('Read Now','bottom-featured-bar') ?></div>: <a class="suggested-post" href="<?php echo get_post_permalink($_post->ID); ?>"><?php echo $_post->post_title; ?> <i class="fa fa-chevron-right" aria-hidden="true"></i></a>  <a class="btn btn-primary close-bfb" id="close-bfb" onclick="close_bottom_featured_bar()"> <i class="fa fa-times" aria-hidden="true"></i> <a>
             </div>
         </div>
     </div>
